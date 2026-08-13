@@ -17,3 +17,32 @@
     @apply w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4;
   }
 }
+
+.hero-slider .slick-arrow {
+  @apply z-30 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white dark:bg-gray-700 text-black dark:text-white shadow-lg hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all duration-200;
+}
+
+.hero-slider .slick-prev {
+  @apply left-2 md:left-6 lg:left-10;
+}
+
+.hero-slider .slick-next {
+  @apply right-2 md:right-6 lg:right-10;
+}
+
+.hero-slider .slick-prev::before,
+.hero-slider .slick-next::before {
+  display: none;
+}
+
+.hero-slider .slick-dots li.slick-active > div {
+  @apply !bg-primary !w-8 md:!w-10;
+}
+
+.hero-slider .slick-dots li {
+  @apply mx-1;
+}
+
+.hero-slider .slick-slide > div {
+  @apply outline-none;
+}
