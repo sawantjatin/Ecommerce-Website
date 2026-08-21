@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Category from "./components/Category/Category";
 import Category2 from "./components/Category/Category2";
+import Services from "./components/Services/Services";
 
 const App = () => {
   useEffect(() => {
@@ -16,11 +17,12 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-gray-900 dark:text-white transition-colors duration-200">
       <Navbar />
       <Hero />
       <Category />
       <Category2 />
+      <Services />
     </div>
   );
 };
