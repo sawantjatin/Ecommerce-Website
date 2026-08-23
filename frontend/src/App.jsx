@@ -6,6 +6,20 @@ import Hero from "./components/Hero/Hero";
 import Category from "./components/Category/Category";
 import Category2 from "./components/Category/Category2";
 import Services from "./components/Services/Services";
+import Banner from "./components/Banner/Banner";
+import headphone from "./assets/hero/headphone.png";
+
+const BannerData = {
+  discount: "50% OFF",
+  title: "Fine Smile",
+  date: "from 1st Jan to 31st Jan",
+  image: headphone,
+  title2: "Air Solo Bass",
+  title3: "Winter Sale",
+  title4:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  bgColor: "#f42c37",
+};
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +37,7 @@ const App = () => {
       <Category />
       <Category2 />
       <Services />
+      <Banner data={BannerData} />
     </div>
   );
 };

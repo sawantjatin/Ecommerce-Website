@@ -100,7 +100,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full pb-14 md:pb-20 overflow-hidden">
+    <section className="relative w-full pb-14 md:pb-20 overflow-hidden rounded-3xl">
       <Slider {...settings} className="hero-slider">
         {HeroData.map((item) => (
           <div key={item.id} className="w-full outline-none">
