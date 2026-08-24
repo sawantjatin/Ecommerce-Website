@@ -31,14 +31,13 @@ const Services = () => {
   ];
 
   return (
-    <section className="bg-[#111827] py-5">
-      <div className="container mx-auto px-4">
+    <section className="py-5">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="flex items-center gap-3 
-                         justify-center"
+              className="flex items-center justify-center gap-3"
             >
               <div className="shrink-0 text-2xl text-red-500">
                 {service.icon}

@@ -12,7 +12,23 @@ function SampleNextArrow({ onClick }) {
     <button
       onClick={onClick}
       aria-label="Next slide"
-      className="slick-arrow slick-next !flex items-center justify-center absolute top-1/2 -translate-y-1/2 right-2 md:right-5 lg:right-8 z-30 w-9 h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 rounded-full bg-white dark:bg-gray-700 text-black dark:text-white shadow-lg hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all duration-200"
+      className="
+        slick-arrow slick-next
+        !flex items-center justify-center
+        absolute top-1/2 -translate-y-1/2
+        right-2 md:right-5 lg:right-8
+        z-30
+        w-9 h-9
+        md:w-11 md:h-11
+        lg:w-12 lg:h-12
+        rounded-full
+        bg-white dark:bg-gray-700
+        text-black dark:text-white
+        shadow-lg
+        hover:bg-primary hover:text-white
+        dark:hover:bg-primary dark:hover:text-white
+        transition-all duration-200
+      "
     >
       <FaArrowRight className="text-xs md:text-sm lg:text-base" />
     </button>
@@ -24,7 +40,23 @@ function SamplePrevArrow({ onClick }) {
     <button
       onClick={onClick}
       aria-label="Previous slide"
-      className="slick-arrow slick-prev !flex items-center justify-center absolute top-1/2 -translate-y-1/2 left-2 md:left-5 lg:left-8 z-30 w-9 h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 rounded-full bg-white dark:bg-gray-700 text-black dark:text-white shadow-lg hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-all duration-200"
+      className="
+        slick-arrow slick-prev
+        !flex items-center justify-center
+        absolute top-1/2 -translate-y-1/2
+        left-2 md:left-5 lg:left-8
+        z-30
+        w-9 h-9
+        md:w-11 md:h-11
+        lg:w-12 lg:h-12
+        rounded-full
+        bg-white dark:bg-gray-700
+        text-black dark:text-white
+        shadow-lg
+        hover:bg-primary hover:text-white
+        dark:hover:bg-primary dark:hover:text-white
+        transition-all duration-200
+      "
     >
       <FaArrowLeft className="text-xs md:text-sm lg:text-base" />
     </button>
@@ -86,7 +118,16 @@ const Hero = () => {
     ),
 
     customPaging: () => (
-      <div className="!w-2.5 !h-2.5 md:!w-3 md:!h-3 rounded-full bg-gray-400 dark:bg-gray-600 transition-all duration-300 hover:bg-primary dark:hover:bg-primary" />
+      <div
+        className="
+          !w-2.5 !h-2.5
+          md:!w-3 md:!h-3
+          rounded-full
+          bg-gray-400 dark:bg-gray-600
+          transition-all duration-300
+          hover:bg-primary dark:hover:bg-primary
+        "
+      />
     ),
 
     responsive: [
@@ -100,33 +141,50 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full pb-14 md:pb-20 overflow-hidden rounded-3xl">
+    <section
+      className="
+        relative
+        w-full
+        py-6 sm:py-8 md:py-10
+        overflow-hidden
+      "
+    >
       <Slider {...settings} className="hero-slider">
         {HeroData.map((item) => (
           <div key={item.id} className="w-full outline-none">
+            {/* Hero Background */}
             <div
               className="
                 hero-bg-color
                 relative
                 overflow-hidden
-                min-h-[620px]
-                sm:min-h-[580px]
-                md:min-h-[560px]
-                lg:min-h-[600px]
-                xl:min-h-[650px]
+                min-h-[300px]
+                sm:min-h-[320px]
+                md:min-h-[340px]
+                lg:min-h-[360px]
               "
             >
-              <div className="container mx-auto h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-8 sm:py-10 md:py-12 lg:py-16">
+              {/* Content Container */}
+              <div
+                className="
+                  container mx-auto
+                  h-full
+                  py-8 sm:py-10 md:py-12 lg:py-14
+                "
+              >
                 <div
                   className="
                     grid
                     grid-cols-1
                     lg:grid-cols-2
-                    gap-8
-                    md:gap-10
-                    lg:gap-12
+                    gap-6
+                    md:gap-8
+                    lg:gap-10
                     items-center
-                    min-h-full
+                    min-h-[280px]
+                    sm:min-h-[300px]
+                    md:min-h-[320px]
+                    lg:min-h-[340px]
                   "
                 >
                   {/* LEFT CONTENT */}
@@ -137,20 +195,31 @@ const Hero = () => {
                       space-y-3
                       sm:space-y-4
                       md:space-y-5
-                      lg:space-y-6
+
                       order-2
                       lg:order-1
+
                       text-center
                       lg:text-left
+
                       w-full
                       max-w-2xl
                       mx-auto
                       lg:mx-0
-                      lg:pl-8
-                      xl:pl-12
-                   "
+                    "
                   >
-                    <p className="text-xs sm:text-sm md:text-base font-semibold tracking-widest uppercase text-gray-600 dark:text-gray-300">
+                    <p
+                      className="
+                        text-xs
+                        sm:text-sm
+                        md:text-base
+                        font-semibold
+                        tracking-widest
+                        uppercase
+                        text-gray-600
+                        dark:text-gray-300
+                      "
+                    >
                       {item.subtitle}
                     </p>
 
@@ -160,8 +229,8 @@ const Hero = () => {
                           text-4xl
                           sm:text-5xl
                           md:text-6xl
-                          lg:text-6xl
-                          xl:text-7xl
+                          lg:text-5xl
+                          xl:text-6xl
                           font-bold
                           uppercase
                           text-black
@@ -178,8 +247,8 @@ const Hero = () => {
                           text-4xl
                           sm:text-5xl
                           md:text-6xl
-                          lg:text-6xl
-                          xl:text-7xl
+                          lg:text-5xl
+                          xl:text-6xl
                           font-bold
                           uppercase
                           text-primary
@@ -210,9 +279,7 @@ const Hero = () => {
                     <div
                       className="
                         flex
-                        flex-col
-                        xs:flex-row
-                        sm:flex-row
+                        flex-row
                         items-center
                         justify-center
                         lg:justify-start
@@ -247,7 +314,15 @@ const Hero = () => {
                       >
                         <span>View Collection</span>
 
-                        <FaArrowRight className="text-xs sm:text-sm group-hover:translate-x-1 transition-transform duration-200" />
+                        <FaArrowRight
+                          className="
+                            text-xs
+                            sm:text-sm
+                            group-hover:translate-x-1
+                            transition-transform
+                            duration-200
+                          "
+                        />
                       </button>
                     </div>
                   </div>
@@ -268,19 +343,24 @@ const Hero = () => {
                       min-w-0
                     "
                   >
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    {/* Background Glow */}
+                    <div
+                      className="
+                        absolute
+                        inset-0
+                        flex
+                        items-center
+                        justify-center
+                        pointer-events-none
+                      "
+                    >
                       <div
                         className="
-                          w-44
-                          h-44
-                          sm:w-56
-                          sm:h-56
-                          md:w-72
-                          md:h-72
-                          lg:w-80
-                          lg:h-80
-                          xl:w-96
-                          xl:h-96
+                          w-40 h-40
+                          sm:w-48 sm:h-48
+                          md:w-56 md:h-56
+                          lg:w-64 lg:h-64
+                          xl:w-72 xl:h-72
                           rounded-full
                           bg-white/60
                           dark:bg-white/5
@@ -289,25 +369,24 @@ const Hero = () => {
                       />
                     </div>
 
+                    {/* Product Image */}
                     <img
                       src={item.img}
                       alt={item.title2}
                       className="
                         relative
                         z-10
-                        w-52
-                        h-52
-                        sm:w-60
-                        sm:h-60
-                        md:w-72
-                        md:h-72
-                        lg:w-80
-                        lg:h-80
-                        xl:w-96
-                        xl:h-96
+
+                        w-44 h-44
+                        sm:w-52 sm:h-52
+                        md:w-60 md:h-60
+                        lg:w-64 lg:h-64
+                        xl:w-72 xl:h-72
+
                         max-w-full
                         object-contain
                         drop-shadow-2xl
+
                         hover:scale-105
                         transition-transform
                         duration-500
