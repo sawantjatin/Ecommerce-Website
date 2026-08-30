@@ -365,6 +365,7 @@ const Hero = () => {
                           bg-white/60
                           dark:bg-white/5
                           blur-3xl
+                          hero-glow-pulse
                         "
                       />
                     </div>
@@ -391,6 +392,7 @@ const Hero = () => {
                         transition-transform
                         duration-500
                         ease-out
+                        hero-product-float
                       "
                     />
                   </div>

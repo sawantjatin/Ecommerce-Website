@@ -12,7 +12,7 @@ const Category = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {/* Earphone */}
-          <div
+          <div data-aos="fade-up" data-aos-delay="0"
             className="
               py-8
               pl-5
@@ -26,6 +26,7 @@ const Category = () => {
               flex
               items-end
               overflow-hidden
+              motion-card
             "
           >
             <div className="relative z-10">
@@ -68,12 +69,13 @@ const Category = () => {
                 bottom-0
                 right-0
                 object-contain
+                motion-product transition-transform duration-500 ease-out
               "
             />
           </div>
 
           {/* Smartwatch */}
-          <div
+          <div data-aos="fade-up" data-aos-delay="100"
             className="
               py-8
               pl-5
@@ -87,6 +89,7 @@ const Category = () => {
               flex
               items-end
               overflow-hidden
+              motion-card
             "
           >
             <div className="relative z-10">
@@ -129,12 +132,13 @@ const Category = () => {
                 right-[-20px]
                 bottom-0
                 object-contain
+                motion-product transition-transform duration-500 ease-out
               "
             />
           </div>
 
           {/* Laptop */}
-          <div
+          <div data-aos="fade-up" data-aos-delay="200"
             className="
               col-span-1
               sm:col-span-2
@@ -151,6 +155,7 @@ const Category = () => {
               flex
               items-end
               overflow-hidden
+              motion-card
             "
           >
             <div className="relative z-10">
@@ -193,6 +198,7 @@ const Category = () => {
                 -translate-y-1/2
                 right-0
                 object-contain
+                motion-product transition-transform duration-500 ease-out
               "
             />
           </div>
